@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+header {
+    display: grid;
+    background-image: url(../imagenes/ropamujer.jpg);
+    align-content: center;
+}
+
+main {
+    display: grid;
+    height: 20%vh;
+    width: auto;
+    background-color:mintcream;
+}
+
+article {
+    display: grid;
+    background-color:mintcream;
+    justify-content: center
+}
+
+footer {
+    display: grid;
+    background-color:slategrey;
+}
+
+
+.headerNav .headerUl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 3em;
+    max-width: 80%;
+    margin: auto;
+}
+
+
+.menuNav {
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+#divImg {
+    display: grid;
+}
+
+
+/* Grid area, columns, rows */
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh repeat(4, auto);
+    grid-template-areas:    
+    "nav"
+    "main"
+    "article"
+    "div"
+    "footer";
+}
+
+header {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+article {
+    grid-area: article;
+}
+
+#divImg {
+    grid-area: div;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+
+
+.menuNav {
+    color: white;
+    text-shadow: 2px 2px 3px #000000
+}
+
+.bienvenida {
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 2rem;
+}
+
+.texto {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 1.3rem;
+}
+
+article h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+article iframe {
+    margin-bottom: 1rem;
+}
+
+#divImg {
+    background-image: url(../imagenes/opcion-dos.webp);
+    background-repeat: repeat;
+    padding: 5.2rem;
+    } 
+
+
+
+.navLogos {
+    margin: 0.5rem;
+    list-style: none;
+}
+
+footer div {
+    margin: 0.5rem;
+    color: white;
+}
+
+
+@media screen and (min-width:768px){
+    iframe {
+        width: 460px;
+        height: 315px;
+    }
+}
+
+@media  screen and (min-width:1024px) {
+    iframe{
+        width: 560px;
+        height: 315px;
+    } 
+
+    .headerNav .headerUl {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        height: 3em;
+        max-width: 80%;
+        margin: auto;
+    }
+
+} 

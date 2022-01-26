@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="locales.html">Locales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+        <label for="name">nombre y apellido</label>
+        <input type="text" name="name"/><br>
+        <label for="email">ingresar email</label>
+        <input type="text" placeholder="ejemplo@gmail" name="email"/><br>
+        <label for="password">ingresar contraceña</label>
+        <input name="usuario" type="password" id="password"><br>
+
+        <label for="observaciones">observaciones <br>
+            <textarea ></textarea>
+        </label><br>
+
+        <div>Seleccionar talle</div>
+        <select name="talle">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select><br>
+
+        <div>Seleccionar color</div>
+        <div>Rojo</div>
+        <input type="radio" name="color" value="Rojo"/>
+        <div>Negro</div>
+        <input type="radio" name="color" value="Negro"/>
+        <div>Amarillo</div>
+        <input type="radio" name="color" value="Amarillo">
+        <div>Azul</div>
+        <input type="radio" name="color" value="Azul">
+
+        <div>Acepto terminos y condiciones</div>
+        <input type="checkbox" name="Acepto"><br>
+        
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Borrar datos">
+        <input type="button" value="Non Action">
+    </form>
+
+<footer>
+    
+</footer>    
+
+</body>
+
+</html>
