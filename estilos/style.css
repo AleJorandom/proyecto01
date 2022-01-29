@@ -1,55 +1,76 @@
 * {
+    box-sizing: 0;
     padding: 0;
     margin: 0;
-    
+}
+
+body {
+    background-color:white;
 }
 
 header {
-    display: grid;
-    background-image: url(../imagenes/ropamujer.jpg);
-    align-content: center;
+    background-image: url(../imagenes/ropamujer.jpg); 
 }
 
 main {
-    display: grid;
     height: 20%vh;
     width: auto;
     background-color:mintcream;
 }
 
 article {
-    display: grid;
     background-color:mintcream;
     justify-content: center
 }
 
 footer {
-    display: grid;
     background-color:slategrey;
 }
 
+.textoSegundo{
+    padding: 0;
+    margin: 2.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
 
-.headerNav .headerUl {
+
+/* .headerNav .headerUl {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    height: 3em;
+    height: 3rem;
     max-width: 80%;
     margin: auto;
 }
+ */
 
 
 .menuNav {
-    color: black;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
+.container-iframe {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
 
-#divImg {
-    display: grid;
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 
@@ -58,7 +79,7 @@ footer {
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 12vh repeat(4, auto);
+    grid-template-rows: 16vh  repeat(4, auto);
     grid-template-areas:    
     "nav"
     "main"
@@ -92,8 +113,9 @@ article {
 
 
 .menuNav {
-    color: white;
-    text-shadow: 2px 2px 3px #000000
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    text-shadow: 2px 2px 8px #5c5c5c
 }
 
 .bienvenida {
@@ -143,13 +165,22 @@ footer div {
         width: 460px;
         height: 315px;
     }
+
+    .textoSegundo{
+        text-align: center;
+        font-size: 2rem;
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 2.5rem;
+        padding: 1rem;
+    }
+
 }
 
 @media  screen and (min-width:1024px) {
-    iframe{
+   /*  iframe{
         width: 560px;
         height: 315px;
-    } 
+    }  */
 
     .headerNav .headerUl {
         display: flex;
@@ -163,4 +194,59 @@ footer div {
         margin: auto;
     }
 
-} 
+    .textoSegundo{
+        text-align: center;
+        font-size: 2.4rem;
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 2.5rem;
+    }
+
+}
+
+/* Sección productos */
+
+.container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imagen:hover{
+    /* transform: translate(5px, 10px); */
+    transform:scale(1.2);
+    /* transition: height 2s; */
+}
+
+
+.productos{
+    padding-bottom: 1rem;
+}  
+
+
+
+/* Sección contacto */
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.form-group{
+    margin: 0.5rem;
+}
+
+/* Sección nosotros */
+
+.text-nosotros{
+    background-image: linear-gradient(to right, red , yellow);
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 2rem;
+}
