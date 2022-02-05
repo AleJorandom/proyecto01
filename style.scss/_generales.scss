@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:white;
+}
+
+
+main {
+    width: auto;
+    background-color:$fondo;
+}
+
+article {
+    background-color:$fondo;
+    justify-content: center
+}
+
+footer {
+    background-color:slategrey;
+}
+
+
+.container-iframe {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-top: 56.25%;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 80%;
+            border: none;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+}
+
+
+.main-bienvenida{
+
+    h1{
+        font-size: 3rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin: 2rem;
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 1.3rem;
+    }
+}
+
+
+article{
+    h2{
+        text-align: center;
+        margin: 1rem;
+    }
+     
+    div{
+        margin-bottom: 1rem;
+    }
+}
+
+
+#divImg {
+    background-image: url(../imagenes/opcion-dos.webp);
+    background-repeat: repeat;
+    padding: 5.2rem;
+} 
+
+footer{
+
+    nav{
+        margin: 0.5rem;
+        color: white;
+
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+    }
+
+    div{
+        margin: 0.5rem;
+    }
+}
+
+/* Sección productos */
+
+.container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imagen{
+
+    transition-duration: 2s;
+        
+    &:hover{
+        transform:scale(1.2);
+        
+        }
+}
+
+
+.productos{
+    padding-bottom: 1rem;  
+}  
+
+.capsula{
+    overflow: hidden;
+}
+
+
+/* Sección contacto */
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.form-group{
+    margin: 0.5rem;
+}
+
+/* Sección nosotros */
+
+.textoSegundo{
+    padding: 0;
+    /* margin: 2.5rem; */
+    text-align: center;
+    font-size: 1.3rem;
+    font-family:Arial, Helvetica, sans-serif;  
+}
+
+.text-nosotros{
+    background-image: linear-gradient(to right, red , yellow);
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 2rem;
+}
+

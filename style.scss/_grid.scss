@@ -1,0 +1,32 @@
+/* Grid area, columns, rows */
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 16vh  repeat(4, auto);
+    grid-template-areas:    
+    "nav"
+    "main"
+    "article"
+    "div"
+    "footer";
+}
+
+header {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+article {
+    grid-area: article;
+}
+
+#divImg {
+    grid-area: div;
+}
+
+.footer {
+    grid-area: footer;
+}

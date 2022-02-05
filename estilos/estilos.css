@@ -1,0 +1,244 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+main {
+  width: auto;
+  background-color: mintcream;
+}
+
+article {
+  background-color: mintcream;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  background-color: slategrey;
+}
+
+.container-iframe {
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.container-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 80%;
+  border: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-bienvenida h1 {
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 2rem;
+}
+
+.main-bienvenida p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1.3rem;
+}
+
+article h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+article div {
+  margin-bottom: 1rem;
+}
+
+#divImg {
+  background-image: url(../imagenes/opcion-dos.webp);
+  background-repeat: repeat;
+  padding: 5.2rem;
+}
+
+footer nav {
+  margin: 0.5rem;
+  color: white;
+}
+
+footer nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer div {
+  margin: 0.5rem;
+}
+
+/* Sección productos */
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imagen {
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.imagen:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.productos {
+  padding-bottom: 1rem;
+}
+
+.capsula {
+  overflow: hidden;
+}
+
+/* Sección contacto */
+.header {
+  color: #36A0FF;
+  font-size: 27px;
+  padding: 10px;
+}
+
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF;
+}
+
+.form-group {
+  margin: 0.5rem;
+}
+
+/* Sección nosotros */
+.textoSegundo {
+  padding: 0;
+  /* margin: 2.5rem; */
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-nosotros {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(yellow));
+  background-image: linear-gradient(to right, red, yellow);
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+/* Grid area, columns, rows */
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 16vh (auto)[4];
+      grid-template-rows: 16vh repeat(4, auto);
+      grid-template-areas: "nav" "main" "article" "div" "footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+article {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: article;
+}
+
+#divImg {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: div;
+}
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+@media screen and (min-width: 425px) {
+  .textoSegundo {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2.5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .textoSegundo {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2.5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .headerNav .headerUl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    height: 3em;
+    max-width: 80%;
+    margin: auto;
+  }
+  .textoSegundo {
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2.5rem;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
