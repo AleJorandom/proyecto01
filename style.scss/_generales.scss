@@ -5,22 +5,25 @@
 }
 
 body {
-    background-color:white;
-}
-
-
-main {
-    width: auto;
     background-color:$fondo;
+    
 }
+
+
+.portadaImg{
+    width: 100%;
+    height: auto;
+}
+
+
 
 article {
-    background-color:$fondo;
+    
     justify-content: center
 }
 
-footer {
-    background-color:slategrey;
+#divImg {
+    background-color: white;
 }
 
 
@@ -35,10 +38,9 @@ footer {
             position: absolute;
             top: 0;
             left: 0;
-            bottom: 0;
             right: 0;
             width: 100%;
-            height: 80%;
+            height: 75%;
             border: none;
             margin-top: auto;
             margin-bottom: auto;
@@ -46,9 +48,11 @@ footer {
 }
 
 
+
+
 .main-bienvenida{
 
-    h1{
+    .bienvenida{
         font-size: 3rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
@@ -67,7 +71,7 @@ footer {
 article{
     h2{
         text-align: center;
-        margin: 1rem;
+        margin-top: 4rem;
     }
      
     div{
@@ -76,13 +80,18 @@ article{
 }
 
 
-#divImg {
-    background-image: url(../imagenes/opcion-dos.webp);
-    background-repeat: repeat;
-    padding: 5.2rem;
-} 
+ .imagenDiv{
+     width: 49%;
+     object-fit: cover;
+ }
+
 
 footer{
+    background-color:slategrey;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
 
     nav{
         margin: 0.5rem;
@@ -126,6 +135,9 @@ footer{
     overflow: hidden;
 }
 
+.boton{
+    color: aqua;
+}
 
 /* Sección contacto */
 
@@ -147,19 +159,38 @@ footer{
 /* Sección nosotros */
 
 .textoSegundo{
+    background-color: rgb(214, 221, 221);
     padding: 0;
-    /* margin: 2.5rem; */
     text-align: center;
     font-size: 1.3rem;
     font-family:Arial, Helvetica, sans-serif;  
 }
 
+
 .text-nosotros{
-    background-image: linear-gradient(to right, red , yellow);
-    height: 100vh;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
     text-align: center;
     margin: 2rem;
+    height: 100%;
 }
 
+h1{
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 2rem;
+    text-shadow: 5px 5px 5px gray;
+}
+
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.locales{
+    text-decoration-line: overline underline;
+    text-decoration-color: purple;  
+  }

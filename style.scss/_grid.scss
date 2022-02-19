@@ -1,9 +1,10 @@
 /* Grid area, columns, rows */
 body{
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 16vh  repeat(4, auto);
-    grid-template-areas:    
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
     "nav"
     "main"
     "article"
@@ -23,7 +24,7 @@ article {
     grid-area: article;
 }
 
-#divImg {
+.imagenDiv {
     grid-area: div;
 }
 
