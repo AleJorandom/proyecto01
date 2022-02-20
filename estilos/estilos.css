@@ -134,6 +134,7 @@ footer div {
 .textoSegundo {
   background-color: #d6dddd;
   padding: 0;
+  height: 100vh;
   text-align: center;
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
