@@ -156,12 +156,6 @@ h1 {
   text-shadow: 5px 5px 5px gray;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 .locales {
   -webkit-text-decoration-line: overline underline;
           text-decoration-line: overline underline;
